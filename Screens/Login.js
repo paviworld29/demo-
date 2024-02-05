@@ -47,7 +47,7 @@ const Login = ({navigation}) => {
   };
 
   const handlePressLogin = () => {
-    if (username !== user?.username && password !== user?.password) {
+    if (username == user?.username && password == user?.password) {
       navigation.navigate('Home');
     } else {
       Alert.alert('Invalid Details');
